@@ -97,6 +97,22 @@ body {
 
 .card {
   margin: 0 auto; }
+  .card-footer {
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    margin: 0 auto;
+    width: 300px;
+    background-color: black; }
+
+ion-icon {
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+  padding: 5px 20px;
+  color: #f1c550; }
+  ion-icon:hover {
+    color: #9c740c; }
 
 .flip-card {
   width: 300px;

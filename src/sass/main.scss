@@ -1,5 +1,5 @@
 $top-color: #a1c45a;
-$mid-layer2-color: #f1c550;
+$color-orange: #f1c550;
 $bottom-color1: #ea4c4c;
 $bottom-color2: #2b43c9;
 
@@ -129,6 +129,24 @@ body {
 
 .card {
   margin: 0 auto;
+  &-footer {
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    margin: 0 auto;
+    width: 300px;
+    background-color: black;
+  }
+}
+ion-icon {
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+  padding: 5px 20px;
+  color: $color-orange;
+  &:hover {
+    color: darken($color-orange, 30%);
+  }
 }
 
 .flip-card {
@@ -199,7 +217,7 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-column: 1/2;
   padding-top: 30px;
-  background-color: $mid-layer2-color;
+  background-color: $color-orange;
   height: 30vh;
 
   &-text-box {

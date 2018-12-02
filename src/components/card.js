@@ -19,6 +19,14 @@ export default class Card extends Component {
           <div className="flip-card-back">
             <h2>{name}</h2>
             <p>{description}</p>
+            <div className="card-footer">
+              <a href={github_url}>
+                <ion-icon name="logo-github" />
+              </a>
+              <a href={app_url}>
+                <ion-icon name="browsers" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
