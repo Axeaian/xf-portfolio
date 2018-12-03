@@ -153,7 +153,6 @@ ion-icon {
   width: 300px;
   height: 300px;
   perspective: 1000px;
-  margin: 10px;
 
   &-inner {
     border-radius: 3px;
@@ -204,7 +203,8 @@ ion-icon {
 }
 
 .grid-container-3 {
-  margin: 50px 70px 100px;
+  margin: 60px auto;
+  width: 80%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 30px;
@@ -218,15 +218,15 @@ ion-icon {
   grid-column: 1/2;
   padding-top: 30px;
   background-color: $color-orange;
-  height: 30vh;
 
   &-text-box {
     text-align: left;
-    padding-left: 50px;
-    padding-top: 30px;
+    padding: 30px 30px 50px 50px;
+    // padding-left: 50px;
+    // padding-top: 30px;
     background-color: rgba(255, 255, 254, 0.952);
-    width: 500px;
-    border-radius: 10px;
+    width: 35vw;
+    border-radius: 10px 10px 0 0;
   }
   &-primary-main {
     display: block;
@@ -234,14 +234,6 @@ ion-icon {
     font-weight: 500;
     letter-spacing: 0.5rem;
     text-transform: uppercase;
-
-    // &::after {
-    //   display: block;
-    //   height: 2px;
-    //   background-color: $bottom-color2;
-    //   content: " ";
-    //   width: 200px;
-    // }
   }
 
   &-primary-sub {
@@ -249,5 +241,101 @@ ion-icon {
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: 0.2rem;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .grid-container-3 {
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/2;
+  }
+  .heading {
+    &-primary-main {
+      font-size: 2.2rem;
+      font-weight: 600;
+      letter-spacing: 0.5rem;
+    }
+
+    &-primary-sub {
+      font-size: 1.5rem;
+      letter-spacing: 0.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .grid-contact-3 {
+    width: 90%;
+    grid-column-gap: 60px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .heading {
+    &-text-box {
+      left: 5%;
+    }
+    &-primary-main {
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: 0.2rem;
+    }
+
+    &-primary-sub {
+      font-size: 1.5rem;
+      letter-spacing: 0.2rem;
+    }
+  }
+
+  .grid-container-3 {
+    grid-template-columns: none;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .typewriter {
+    span {
+      &:nth-child(1) {
+        width: 4em;
+      }
+
+      &:nth-child(2) {
+        width: 6em;
+      }
+
+      &:nth-child(3) {
+        width: 8em;
+      }
+    }
+  }
+  .contact {
+    grid-template-columns: none;
+
+    &-text-box {
+      margin: 0 auto;
+      width: 60vw;
+      margin-top: 30px;
+      padding: 30px 50px;
+    }
+  }
+}
+@media only screen and (max-width: 550px) {
+  .contact {
+    grid-template-columns: none;
+
+    &-text-box {
+      margin: 0 auto;
+      width: 60vw;
+      margin-top: 30px;
+      padding: 30px 30px;
+    }
+    &-primary-main {
+      font-size: 1.5rem;
+      letter-spacing: 0.2rem;
+    }
+    &-primary-sub {
+      font-size: 1rem;
+      letter-spacing: 0.2rem;
+    }
   }
 }
